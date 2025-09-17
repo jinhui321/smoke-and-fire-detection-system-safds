@@ -1,12 +1,166 @@
 import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
-import { MapPin, Phone, Users, Truck, Clock, Navigation, MapPinIcon, AlertCircle, Loader, Crosshair } from 'lucide-react';
+import { MapPin, Phone, Clock, Navigation, AlertCircle, Loader, Crosshair } from 'lucide-react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { FireStation } from '../types';
-import { FireStationData, loadKMLFile } from '../utils/kmlParser';
-import { getCurrentLocation, UserLocation } from '../utils/geolocation';
-import { getNearestLocations } from '../utils/distanceCalculator';
+
+// Types
+interface FireStationData {
+  id: string;
+  name: string;
+  coordinates: {
+    lat: number;
+    lng: number;
+  };
+  description?: string;
+  phoneNumber: string;
+}
+
+interface UserLocation {
+  lat: number;
+  lng: number;
+}
+
+type FireStationWithDistance = FireStationData & {
+  distance: number;
+  travelTime: number;
+};
+
+// Haversine formula for distance calculation
+const calculateDistance = (lat1: number, lon1: number, lat2: number, lon2: number): number => {
+  const R = 6371; // Earth's radius in kilometers
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+  const a = 
+    Math.sin(dLat/2) * Math.sin(dLat/2) +
+    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
+    Math.sin(dLon/2) * Math.sin(dLon/2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  return R * c;
+};
+
+// Get user's current location
+const getCurrentLocation = (): Promise<UserLocation> => {
+  return new Promise((resolve, reject) => {
+    if (!navigator.geolocation) {
+      reject(new Error('Geolocation is not supported by this browser'));
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        resolve({
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        });
+      },
+      (error) => {
+        let errorMessage = 'Unknown error occurred';
+        switch (error.code) {
+          case error.PERMISSION_DENIED:
+            errorMessage = 'Location access denied by user';
+            break;
+          case error.POSITION_UNAVAILABLE:
+            errorMessage = 'Location information unavailable';
+            break;
+          case error.TIMEOUT:
+            errorMessage = 'Location request timed out';
+            break;
+        }
+        reject(new Error(errorMessage));
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 300000
+      }
+    );
+  });
+};
+
+// Parse KML file
+const loadKMLFile = async (): Promise<FireStationData[]> => {
+  try {
+    const response = await fetch('/MalaysiaFireStationsMap.kml');
+    const kmlText = await response.text();
+    
+    const parser = new DOMParser();
+    const kmlDoc = parser.parseFromString(kmlText, 'text/xml');
+    
+    const placemarks = kmlDoc.getElementsByTagName('Placemark');
+    const fireStations: FireStationData[] = [];
+    
+    for (let i = 0; i < placemarks.length; i++) {
+      const placemark = placemarks[i];
+      const nameElement = placemark.getElementsByTagName('name')[0];
+      const descriptionElement = placemark.getElementsByTagName('description')[0];
+      const coordinatesElement = placemark.getElementsByTagName('coordinates')[0];
+      
+      if (nameElement && coordinatesElement) {
+        const name = nameElement.textContent || '';
+        const description = descriptionElement?.textContent || '';
+        const coordsText = coordinatesElement.textContent?.trim() || '';
+        
+        // Extract phone number from description
+        const phoneRegex = /\+60[\s\d-]+/g;
+        const phoneMatch = description.match(phoneRegex);
+        const phoneNumber = phoneMatch ? phoneMatch[0].replace(/\s/g, '') : '999';
+        
+        // Parse coordinates (format: longitude,latitude,altitude)
+        const coords = coordsText.split(',');
+        if (coords.length >= 2) {
+          const lng = parseFloat(coords[0]);
+          const lat = parseFloat(coords[1]);
+          
+          if (!isNaN(lat) && !isNaN(lng)) {
+            fireStations.push({
+              id: `station-${i}`,
+              name: name,
+              coordinates: { lat, lng },
+              description: description,
+              phoneNumber
+            });
+          }
+        }
+      }
+    }
+    
+    return fireStations;
+  } catch (error) {
+    console.error('Error loading KML file:', error);
+    throw new Error('Failed to load fire station data');
+  }
+};
+
+// Get nearest locations using Haversine formula
+const getNearestLocations = (
+  userLocation: UserLocation,
+  stations: FireStationData[],
+  count: number = 5
+): FireStationWithDistance[] => {
+  const stationsWithDistance = stations.map(station => {
+    const distance = calculateDistance(
+      userLocation.lat,
+      userLocation.lng,
+      station.coordinates.lat,
+      station.coordinates.lng
+    );
+    
+    // Estimate travel time (assuming average speed of 50 km/h)
+    const travelTime = Math.round((distance / 50) * 60);
+    
+    return {
+      ...station,
+      distance,
+      travelTime
+    };
+  });
+  
+  // Sort by distance and return top N
+  return stationsWithDistance
+    .sort((a, b) => a.distance - b.distance)
+    .slice(0, count);
+};
 
 // Fix for default markers in react-leaflet
 delete (L.Icon.Default.prototype as any)._getIconUrl;
@@ -26,6 +180,15 @@ const fireStationIcon = new L.Icon({
   shadowSize: [41, 41]
 });
 
+const fireStationYellowIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
 const userLocationIcon = new L.Icon({
   iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png',
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
@@ -34,11 +197,6 @@ const userLocationIcon = new L.Icon({
   popupAnchor: [1, -34],
   shadowSize: [41, 41]
 });
-
-type FireStationWithDistance = FireStationData & {
-  distance: number;
-  travelTime: number;
-};
 
 // Recenter Button Component
 interface RecenterButtonProps {
@@ -78,6 +236,7 @@ const FireStationsTab: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [locationError, setLocationError] = useState<string | null>(null);
+  const [showAllStations, setShowAllStations] = useState(false);
 
   useEffect(() => {
     const initializeData = async () => {
@@ -153,18 +312,20 @@ const FireStationsTab: React.FC = () => {
       <div className="lg:col-span-2">
         <div className="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
           <div className="p-4 border-b border-gray-700">
-            <h2 className="text-xl font-bold text-white flex items-center gap-2">
-              <MapPin className="w-5 h-5" />
-              Fire Stations Map
-              {locationError && (
-                <span className="text-xs text-yellow-400 ml-2">({locationError})</span>
+            <div className="flex items-center justify-between">
+              <h2 className="text-xl font-bold text-white flex items-center gap-2">
+                <MapPin className="w-5 h-5" />
+                Fire Stations Map
+                {locationError && (
+                  <span className="text-xs text-yellow-400 ml-2">({locationError})</span>
+                )}
+              </h2>
+              {userLocation && (
+                <span className="text-sm text-gray-400">
+                  Current location: {userLocation.lat.toFixed(4)}, {userLocation.lng.toFixed(4)}
+                </span>
               )}
-            </h2>
-            {userLocation && (
-              <p className="text-sm text-gray-400 mt-1">
-                Your location: {userLocation.lat.toFixed(4)}, {userLocation.lng.toFixed(4)}
-              </p>
-            )}
+            </div>
           </div>
           
           <div className="relative h-[520px] bg-gray-900">
@@ -191,25 +352,36 @@ const FireStationsTab: React.FC = () => {
               )}
               
               {/* Fire Station Markers */}
-              {fireStations.map((station) => (
-                <Marker
-                  key={station.id}
-                  position={[station.coordinates.lat, station.coordinates.lng]}
-                  icon={fireStationIcon}
-                  eventHandlers={{
-                    click: () => {
-                      const stationWithDistance = nearestStations.find(s => s.id === station.id) || {
-                        ...station,
-                        distance: 0,
-                        travelTime: 0
-                      };
-                      handleStationSelect(stationWithDistance);
-                    }
-                  }}
-                >
+              {fireStations.map((station) => {
+                const isNearestFive = nearestStations.some(ns => ns.id === station.id);
+                
+                // Only show nearest 5 by default, or all stations when toggle is on
+                if (!showAllStations && !isNearestFive) {
+                  return null;
+                }
+                
+                return (
+                  <Marker
+                    key={station.id}
+                    position={[station.coordinates.lat, station.coordinates.lng]}
+                    icon={isNearestFive ? fireStationIcon : fireStationYellowIcon}
+                    eventHandlers={{
+                      click: () => {
+                        const stationWithDistance = nearestStations.find(s => s.id === station.id) || {
+                          ...station,
+                          distance: 0,
+                          travelTime: 0
+                        };
+                        handleStationSelect(stationWithDistance);
+                      }
+                    }}
+                  >
                   <Popup>
                     <div className="min-w-[200px]">
                       <h3 className="font-bold text-sm mb-2">{station.name}</h3>
+                      <div className="text-xs text-gray-600 mb-2">
+                        <div>Phone: {station.phoneNumber}</div>
+                      </div>
                       {userLocation && (
                         <div className="text-xs text-gray-600 mb-2">
                           <div>Distance: {nearestStations.find(s => s.id === station.id)?.distance.toFixed(2) || 'N/A'} km</div>
@@ -222,11 +394,26 @@ const FireStationsTab: React.FC = () => {
                     </div>
                   </Popup>
                 </Marker>
-              ))}
+                );
+              })}
               
               {/* Recenter Button */}
-              <RecenterButton userLocation={userLocation} />
-            </MapContainer>
+                <RecenterButton userLocation={userLocation} />
+                
+                {/* Toggle Button for All Stations */}
+                <div className="absolute bottom-4 left-4 z-[1000]">
+                  <button
+                    onClick={() => setShowAllStations(!showAllStations)}
+                    className={`px-4 py-2 rounded-lg shadow-lg font-medium transition-all duration-200 ${
+                      showAllStations
+                        ? 'bg-yellow-500 text-white hover:bg-yellow-600'
+                        : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+                    }`}
+                  >
+                    {showAllStations ? 'Hide Other Stations' : 'Show All Stations'}
+                  </button>
+                </div>
+              </MapContainer>
           </div>
         </div>
       </div>
@@ -236,14 +423,16 @@ const FireStationsTab: React.FC = () => {
         {/* Station List */}
         <div className="bg-gray-800 rounded-lg border border-gray-700">
           <div className="p-4 border-b border-gray-700">
-            <h3 className="text-lg font-medium text-white">
-              {userLocation ? 'Top 5 Nearest Stations' : 'Fire Stations'}
-            </h3>
-            {userLocation && (
-              <p className="text-sm text-gray-400 mt-1">
-                Based on your current location
-              </p>
-            )}
+            <div className="flex items-center justify-between">
+              <h3 className="text-lg font-medium text-white">
+                {userLocation ? 'Top 5 Nearest Stations' : 'Fire Stations'}
+              </h3>
+              {userLocation && (
+                <span className="text-sm text-gray-400">
+                  Based on current location
+                </span>
+              )}
+            </div>
           </div>
           
           <div className="p-4 space-y-3">
@@ -258,32 +447,26 @@ const FireStationsTab: React.FC = () => {
                   }`}
                   onClick={() => handleStationSelect(station)}
                 >
-                  <div className="flex items-center justify-between mb-2">
-                    <h4 className="text-white font-medium">{station.name}</h4>
-                    {userLocation && (
-                      <div className="flex items-center gap-2">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      {userLocation && (
                         <span className="text-xs bg-blue-600 text-white px-2 py-1 rounded">
-                          #{index + 1}
+                          {index + 1}
                         </span>
-                      </div>
-                    )}
-                  </div>
-                  <div className="flex items-center gap-4 text-sm text-gray-400">
-                    {userLocation ? (
-                      <>
+                      )}
+                      <h4 className="text-white font-medium">
+                        {station.name}
+                      </h4>
+                    </div>
+                    
+                    {userLocation && (
+                      <div className="flex items-center gap-3 text-sm text-gray-400">
                         <div className="flex items-center gap-1">
-                          <Navigation className="w-3 h-3" />
                           <span>{station.distance.toFixed(2)} km</span>
                         </div>
                         <div className="flex items-center gap-1">
-                          <Clock className="w-3 h-3" />
                           <span>~{station.travelTime} min</span>
                         </div>
-                      </>
-                    ) : (
-                      <div className="flex items-center gap-1">
-                        <MapPin className="w-3 h-3" />
-                        <span>Location available</span>
                       </div>
                     )}
                   </div>
@@ -302,55 +485,56 @@ const FireStationsTab: React.FC = () => {
         {selectedStation && (
           <div className="bg-gray-800 rounded-lg border border-gray-700">
             <div className="p-4 border-b border-gray-700">
-              <h3 className="text-lg font-medium text-white">Station Details</h3>
+              <h3 className="text-lg font-medium text-white">Fire Station Details</h3>
             </div>
             
             <div className="p-4 space-y-4">
               <div>
                 <h4 className="text-white font-medium mb-2">{selectedStation.name}</h4>
-                {userLocation && (
-                  <div className="flex items-center gap-2 mb-2">
-                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                    <span className="text-sm text-gray-300">Fire Station</span>
-                  </div>
-                )}
               </div>
 
               <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <MapPin className="w-4 h-4 text-gray-400 mt-0.5" />
-                  <div>
-                    <p className="text-gray-300 text-sm">
-                      Lat: {selectedStation.coordinates.lat.toFixed(4)}, 
-                      Lng: {selectedStation.coordinates.lng.toFixed(4)}
-                    </p>
-                    {userLocation && (
-                      <p className="text-gray-500 text-xs">{selectedStation.distance.toFixed(2)} km away</p>
-                    )}
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-4 h-4 text-gray-400 mt-0.5" />
+                    <div>
+                      <p className="text-gray-300 text-sm font-medium">
+                        Lat: {selectedStation.coordinates.lat.toFixed(4)}, 
+                        Lng: {selectedStation.coordinates.lng.toFixed(4)}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Phone className="w-4 h-4 text-gray-400 mt-0.5" />
+                    <div>
+                      <p className="text-gray-300 text-sm font-medium">
+                        Contact: {selectedStation.phoneNumber}
+                      </p>
+                    </div>
                   </div>
                 </div>
 
                 {selectedStation.description && (
                   <div className="flex items-start gap-3">
-                    <Phone className="w-4 h-4 text-gray-400 mt-0.5" />
-                    <p className="text-gray-300 text-sm">{selectedStation.description}</p>
+                    <AlertCircle className="w-4 h-4 text-gray-400 mt-0.5" />
+                    <div>
+                      <p className="text-gray-300 text-sm font-medium">Description: {selectedStation.description}</p>
+                    </div>
                   </div>
                 )}
 
                 {userLocation && (
                   <div className="grid grid-cols-2 gap-3">
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-3">
                       <Navigation className="w-4 h-4 text-gray-400" />
                       <div>
-                        <p className="text-white text-sm font-medium">{selectedStation.distance.toFixed(2)} km</p>
-                        <p className="text-gray-500 text-xs">Distance</p>
+                        <p className="text-gray-300 text-sm font-medium">Distance: {selectedStation.distance.toFixed(2)} km</p>
                       </div>
                     </div>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-3">
                       <Clock className="w-4 h-4 text-gray-400" />
                       <div>
-                        <p className="text-white text-sm font-medium">~{selectedStation.travelTime} min</p>
-                        <p className="text-gray-500 text-xs">Est. Time</p>
+                        <p className="text-gray-300 text-sm font-medium">Est Time: ~{selectedStation.travelTime} min</p>
                       </div>
                     </div>
                   </div>
@@ -358,8 +542,17 @@ const FireStationsTab: React.FC = () => {
               </div>
 
               <div className="pt-4 border-t border-gray-700">
-                <button className="w-full bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-lg font-medium transition-colors">
-                  Call Emergency Services
+                <button 
+                  className="w-full bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-lg font-medium transition-colors"
+                  onClick={() => {
+                    if (selectedStation.phoneNumber) {
+                      window.location.href = `tel:${selectedStation.phoneNumber}`;
+                    } else {
+                      alert('Phone number not available for this fire station.');
+                    }
+                  }}
+                >
+                  Call Fire Station
                 </button>
                 {userLocation && (
                   <button 

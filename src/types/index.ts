@@ -32,6 +32,7 @@ export interface VideoProcessingResult {
   video_path: string;
   timestamp: string;
   message: string;
+  annotated_video_url?: string;
 }
 
 export interface ProcessedFrame {

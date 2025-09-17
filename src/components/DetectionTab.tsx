@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Upload, Camera, CameraOff, FileImage, FileVideo, Play, AlertTriangle, CheckCircle, X, Square } from 'lucide-react';
+import { Upload, Camera, CameraOff, FileImage, FileVideo, Play, AlertTriangle, CheckCircle, X, Square, Download } from 'lucide-react';
 import { DetectionResult, VideoProcessingResult, ProcessedFrame } from '../types';
 // import { generateMockDetection } from '../utils/mockData';
 
@@ -162,9 +162,21 @@ const DetectionTab: React.FC = () => {
 
   const stopVideoProcessing = async () => {
     try {
-      await fetch('http://localhost:8000/stop_video_processing', {
+      const response = await fetch('http://localhost:8000/stop_video_processing', {
         method: 'POST',
       });
+      
+      if (response.ok) {
+        const result = await response.json();
+        
+        // If annotated video is available, update videoProcessingResult with download URL
+        if (result.annotated_video_url) {
+          setVideoProcessingResult(prev => prev ? {
+            ...prev,
+            annotated_video_url: result.annotated_video_url
+          } : null);
+        }
+      }
       
       if (eventSourceRef.current) {
         eventSourceRef.current.close();
@@ -172,8 +184,9 @@ const DetectionTab: React.FC = () => {
       }
       
       setIsVideoProcessing(false);
-      setProcessedFrame(null);
-      setCurrentDetections([]);
+      // Keep the last processed frame and detections visible after stopping
+      // setProcessedFrame(null);
+      // setCurrentDetections([]);
     } catch (error) {
       console.error('Error stopping video processing:', error);
     }
@@ -240,6 +253,36 @@ const DetectionTab: React.FC = () => {
         return <CheckCircle className="w-6 h-6" />;
       default:
         return null;
+    }
+  };
+
+  const handleDownloadResult = () => {
+    if (detectionResult?.result_url) {
+      const filename = detectionResult.result_url.split('/').pop();
+      const downloadUrl = `http://localhost:8000/download/${filename}`;
+      
+      // Create a temporary anchor element to trigger download
+      const link = document.createElement('a');
+      link.href = downloadUrl;
+      link.download = filename || 'annotated_result';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  };
+
+  const handleDownloadVideo = () => {
+    if (videoProcessingResult?.annotated_video_url) {
+      const filename = videoProcessingResult.annotated_video_url.split('/').pop();
+      const downloadUrl = `http://localhost:8000/download/${filename}`;
+      
+      // Create a temporary anchor element to trigger download
+      const link = document.createElement('a');
+      link.href = downloadUrl;
+      link.download = filename || 'annotated_video';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     }
   };
 
@@ -356,7 +399,7 @@ const DetectionTab: React.FC = () => {
           </div>
 
           {/* Analysis Button */}
-          <div className="mt-6 text-center">
+          <div className="mt-6 text-center space-y-3">
             <button
               onClick={analyzeMedia}
               disabled={!uploadedFile || isAnalyzing}
@@ -374,6 +417,17 @@ const DetectionTab: React.FC = () => {
                 </>
               )}
             </button>
+            
+            {/* Clear Media Button */}
+            {(uploadedFile || isVideoProcessing) && (
+              <button
+                onClick={clearResults}
+                className="px-9 py-3 bg-gray-600 hover:bg-gray-700 text-white rounded-lg font-medium transition-colors flex items-center gap-2 mx-auto"
+              >
+                <X className="w-5 h-5" />
+                Clear Media
+              </button>
+            )}
           </div>
         </>
       )}
@@ -421,75 +475,111 @@ const DetectionTab: React.FC = () => {
     {/* Right: Detection Results */}
     <div className="bg-gray-800 p-6 rounded-lg border border-gray-700">
       <h3 className="text-lg font-medium text-white mb-4">Detection Results</h3>
-      <div className="bg-gray-900 p-6 rounded-lg min-h-[400px] flex flex-col items-center justify-center">
-        {cameraActive ? (
-          // Live Camera Feed
-          <div className="space-y-4">
+      
+      {/* Media Display Container */}
+      <div className="bg-gray-900 p-6 rounded-lg h-[400px] flex flex-col items-center justify-center">
+        <div className="w-full h-[380px] flex items-center justify-center">
+          {cameraActive ? (
+            // Live Camera Feed
             <img
               src="http://localhost:8000/video_feed"
               alt="Live Webcam Feed"
-              className="mx-auto rounded-lg border border-gray-700 max-h-64 object-contain bg-black"
-              style={{ width: "100%", maxWidth: 320 }}
+              className="max-w-full max-h-full object-contain rounded-lg border border-gray-700 bg-black"
             />
-            <p className="text-white">Camera Active</p>
+          ) : processedFrame ? (
+            // Video Processing (active or completed)
+            <img
+              src={processedFrame}
+              alt="Processed Video Frame"
+              className="max-w-full max-h-full object-contain rounded-lg border border-gray-700 bg-black"
+            />
+          ) : isVideoProcessing ? (
+            // Video Processing Loading
+            <div className="space-y-4 text-center">
+              <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto"></div>
+              <p className="text-white">Processing video...</p>
+              <p className="text-sm text-gray-400">Initializing real-time detection</p>
+            </div>
+          ) : detectionResult?.result_url ? (
+            // Detection Results for Images
+            <img
+              src={`http://localhost:8000${detectionResult.result_url}`}
+              alt="Annotated result"
+              className="max-w-full max-h-full object-contain rounded-lg border border-gray-700"
+            />
+          ) : (
+            // Default message
+            <p className="text-gray-400">
+              No detection results yet. Upload media or start the camera to begin analysis.
+            </p>
+          )}
+        </div>
+      </div>
+
+      {/* Detection Information Below */}
+      <div className="mt-4">
+        {cameraActive && (
+          <div className="text-center">
+            <p className="text-white font-medium">Live Camera Feed Active</p>
+            <p className="text-sm text-gray-400">Real-time fire and smoke detection</p>
           </div>
-        ) : isVideoProcessing ? (
-          // Real-time Video Processing
-          <div className="space-y-4 text-center">
-            {processedFrame ? (
+        )}
+        
+        {(isVideoProcessing || videoProcessingResult) && (
+          <div className="text-center">
+            {currentDetections.length > 0 ? (
               <>
-                <img
-                  src={processedFrame}
-                  alt="Processed Video Frame"
-                  className="mx-auto rounded-lg border border-gray-700 max-h-64 object-contain bg-black"
-                  style={{ width: "100%", maxWidth: 400 }}
-                />
-                <div className="text-white">
-                  <p className="font-medium">Real-time Video Processing</p>
-                  {currentDetections.length > 0 ? (
-                    <div className="mt-2">
-                      <p className="text-sm text-gray-400">Detections:</p>
-                      <div className="flex flex-wrap gap-2 justify-center mt-1">
-                        {currentDetections.map((detection, index) => (
-                          <span
-                            key={index}
-                            className={`px-2 py-1 rounded text-xs font-medium ${
-                              detection.class.toLowerCase().includes('fire') 
-                                ? 'bg-red-600 text-white' 
-                                : detection.class.toLowerCase().includes('smoke')
-                                ? 'bg-orange-600 text-white'
-                                : 'bg-gray-600 text-white'
-                            }`}
-                          >
-                            {detection.class} ({(detection.confidence * 100).toFixed(1)}%)
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  ) : (
-                    <p className="text-sm text-gray-400">No detections in current frame</p>
-                  )}
+                <p className="text-white font-medium mb-2">{isVideoProcessing ? 'Real-time Detections:' : 'Final Detections:'}</p>
+                <div className="space-y-2">
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    {currentDetections.map((detection, index) => (
+                      <span
+                        key={index}
+                        className={`px-2 py-1 rounded text-xs font-medium ${
+                          detection.class.toLowerCase().includes('fire') 
+                            ? 'bg-red-600 text-white' 
+                            : detection.class.toLowerCase().includes('smoke')
+                            ? 'bg-orange-600 text-white'
+                            : 'bg-gray-600 text-white'
+                        }`}
+                      >
+                        {detection.class} ({(detection.confidence * 100).toFixed(1)}%)
+                      </span>
+                    ))}
+                  </div>
                 </div>
+              </>
+            ) : isVideoProcessing ? (
+              <p className="text-sm text-gray-400">No detections in current frame</p>
+            ) : (
+              <p className="text-white font-medium">Video Processing Complete</p>
+            )}
+            <div className="flex flex-col gap-2 items-center">
+              {isVideoProcessing ? (
                 <button
                   onClick={stopVideoProcessing}
-                  className="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg font-medium transition-colors flex items-center gap-2 mx-auto"
+                  className="mt-3 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg font-medium transition-colors flex items-center gap-2"
                 >
                   <Square className="w-4 h-4" />
                   Stop Processing
                 </button>
-              </>
-            ) : (
-              <div className="space-y-4">
-                <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto"></div>
-                <p className="text-white">Processing video...</p>
-                <p className="text-sm text-gray-400">Initializing real-time detection</p>
-              </div>
-            )}
+              ) : null}
+              {videoProcessingResult?.annotated_video_url && (
+                <button
+                  onClick={handleDownloadVideo}
+                  className="mt-3 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors flex items-center gap-2"
+                >
+                  <Download className="w-4 h-4" />
+                  Download Annotated Result
+                </button>
+              )}
+            </div>
           </div>
-        ) : detectionResult ? (
-          // Detection Results for Images
-          <>
-            <div className="flex items-center gap-4 mb-4">
+        )}
+        
+        {detectionResult && (
+          <div className="text-center">
+            <div className="flex items-center justify-center gap-3 mb-2">
               <div className={`${getResultColor(detectionResult.type)}`}>
                 {getResultIcon(detectionResult.type)}
               </div>
@@ -502,27 +592,21 @@ const DetectionTab: React.FC = () => {
                   {detectionResult.type.toUpperCase()}
                   {detectionResult.type !== "clear" && " DETECTED"}
                 </h4>
-                <p className="text-gray-400">
-                  Confidence: {Math.round(detectionResult.confidence * 100)}%
-                </p>
               </div>
             </div>
-
-            {detectionResult?.result_url && (
-              <div className="mt-4">
-                <img
-                  src={`http://localhost:8000${detectionResult.result_url}`}
-                  alt="Annotated result"
-                  className="rounded-lg border border-gray-700"
-                />
-              </div>
+            <p className="text-gray-400 mb-3">
+              Confidence: {Math.round(detectionResult.confidence * 100)}%
+            </p>
+            {detectionResult.result_url && (
+              <button
+                onClick={handleDownloadResult}
+                className="mt-3 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors flex items-center gap-2 mx-auto"
+              >
+                <Download className="w-4 h-4" />
+                Download Annotated Result
+              </button>
             )}
-          </>
-        ) : (
-          // Default message
-          <p className="text-gray-400">
-            No detection results yet. Upload media or start the camera to begin analysis.
-          </p>
+          </div>
         )}
       </div>
     </div>

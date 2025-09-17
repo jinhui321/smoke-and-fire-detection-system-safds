@@ -1,0 +1,6363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Malaysia Fire Stations</name>
+    <description><![CDATA[The map will list available fire stations in Malaysia. <br><br>Source is taken from: https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&t=h&z=9&mid=1rwUSrH69I4AoHwnlP3z2IK51E20&ll=2.7156636425153495%2C102.42699278121945<br><br>And I further add some stations that is not in the list]]></description>
+    <Style id="icon-1504-000000-nodesc-normal">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1504-000000-nodesc-highlight">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1504-000000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1504-000000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1504-000000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1504-9C27B0-nodesc-normal">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1504-9C27B0-nodesc-highlight">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1504-9C27B0-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1504-9C27B0-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1504-9C27B0-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1504-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1504-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1504-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1504-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1504-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1571-000000-normal">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1571-000000-highlight">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1571-000000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1571-000000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1571-000000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1571-000000-nodesc-normal">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1571-000000-nodesc-highlight">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1571-000000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1571-000000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1571-000000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1571-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1571-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1571-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1571-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1571-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1571-9C27B0-normal">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1571-9C27B0-highlight">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1571-9C27B0">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1571-9C27B0-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1571-9C27B0-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1571-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1571-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1571-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1571-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1571-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1571-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1571-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1571-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1571-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1571-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1594-000000-normal">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1594-000000-highlight">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1594-000000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1594-000000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1594-000000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1594-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1594-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1594-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1594-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1594-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1594-3949AB-normal">
+      <IconStyle>
+        <color>ffab4939</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1594-3949AB-highlight">
+      <IconStyle>
+        <color>ffab4939</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1594-3949AB">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1594-3949AB-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1594-3949AB-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1594-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1594-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1594-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1594-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1594-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1594-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1594-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1594-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1594-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1594-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1739-000000-nodesc-normal">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1739-000000-nodesc-highlight">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1739-000000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1739-000000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1739-000000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1739-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1739-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1739-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1739-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1739-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1739-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1739-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1739-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1739-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1739-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1739-3F5BA9-nodesc-normal">
+      <IconStyle>
+        <color>ffa95b3f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1739-3F5BA9-nodesc-highlight">
+      <IconStyle>
+        <color>ffa95b3f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1739-3F5BA9-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1739-3F5BA9-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1739-3F5BA9-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1739-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1739-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1739-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1739-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1739-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1739-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1739-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1739-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1739-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1739-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FF5252-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-FF5252-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-FF5252">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FF5252-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FF5252-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FF5252-nodesc-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-FF5252-nodesc-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-FF5252-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FF5252-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FF5252-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-22-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-22-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-22">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-22-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-22-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-22-nodesc-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-22-nodesc-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-22-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-22-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-22-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-503-9C27B0-nodesc-normal">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-503-9C27B0-nodesc-highlight">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-503-9C27B0-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-503-9C27B0-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-503-9C27B0-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-503-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-503-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-503-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-503-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-503-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-503-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-503-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-503-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-503-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-959-000000-nodesc-normal">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-959-000000-nodesc-highlight">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-959-000000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-959-000000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-959-000000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-959-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-959-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-959-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-959-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-959-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-959-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-959-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-959-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-959-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-959-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-959-9C27B0-nodesc-normal">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-959-9C27B0-nodesc-highlight">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-959-9C27B0-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-959-9C27B0-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-959-9C27B0-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-959-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-959-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-959-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-959-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-959-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-959-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-959-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-959-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-959-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-959-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-959-FFD600-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-959-FFD600-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-959-FFD600">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-959-FFD600-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-959-FFD600-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-959-FFEA00-normal">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-959-FFEA00-highlight">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-959-FFEA00">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-959-FFEA00-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-959-FFEA00-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-960-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/960-wht-star-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-960-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/960-wht-star-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-960-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-960-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-960-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-960-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/960-wht-star-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-960-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/960-wht-star-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-960-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-960-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-960-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-960-0F9D58-nodesc-normal">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/960-wht-star-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-960-0F9D58-nodesc-highlight">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/960-wht-star-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-960-0F9D58-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-960-0F9D58-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-960-0F9D58-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-960-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/960-wht-star-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-960-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/960-wht-star-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-960-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-960-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-960-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-962-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/962-wht-diamond-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-962-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/962-wht-diamond-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-962-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-962-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-962-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-962-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/962-wht-diamond-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-962-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/962-wht-diamond-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-962-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-962-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-962-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-962-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/962-wht-diamond-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-962-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/962-wht-diamond-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-962-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-962-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-962-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>KL area etc - fire - 2 very different areas - see other map also</name>
+      <Placemark>
+        <name>Prai Fire Station</name>
+        <description>approx location</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            100.387917,5.384968,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bukit Mertajam Fire Station</name>
+        <description>approx location</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            100.471859,5.354718,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sungai Bakup Fire Station</name>
+        <description>approx location - SWAG</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            100.493488,5.229939,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bandar Perda Fire Station</name>
+        <description>Bukit Mertajam, Penang, Malaysia - approx loc of fire station</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            100.431188,5.370123,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bandar Perda</name>
+        <description>Bukit Mertajam, Penang, Malaysia - Banda Perda Fire Station - Dec 2010 - approximate location</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            100.431188,5.370123,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kota Kinabalu, Sabah</name>
+        <description>Malaysia  - Kota Kinabula Fire Station has scuba divers - Dec 2010 - approximate location</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            116.115777,5.976474,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sandakan, Sabah</name>
+        <description>Malaysia - Sandakan Fire Station - have divers - Dec 2010 - approx location</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            118.057056,5.84561,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tawau, Sabah</name>
+        <description>Malaysia - Tawau Fire Station has divers - Dec 2010 - approx location</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            117.914787,4.282457,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Selayang Baru</name>
+        <description>68100 Batu Caves, Federal Territory of Kuala Lumpur, Malaysia - Selayang Fire Station - very approximate location</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.665739,3.2431,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jengka Fire Station</name>
+        <description>47500 Subang Jaya, Selangor, Malaysia - very approximate location - 12/2010</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.586112,3.072613,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chow Kit Fire Station</name>
+        <description>Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia - approx location</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.69829,3.163744,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sentul Fire Station</name>
+        <description>Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia - approximate location</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.686905,3.198344,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Subang fire station</name>
+        <description>per news paper article</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.552296,3.131089,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Petaling Jaya fire station</name>
+        <description>per newspaper article</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.607914,3.105378,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pusat Bandar Puchong Fire Station</name>
+        <description>new station with 2 pumpers and 30 firemen - November 2009 - on Julan Bandar Dua - right here - there is a photo</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.6179749,3.0332513,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bandar Tun Razak Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.721817,3.089881,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Serdang Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.709374,3.020645,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bukit Jalil Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.666928,3.050786,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pantai Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.669989,3.116468,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Jalan Hang Tuah</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.704759,3.137843,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Taman Tun Dr. Ismail Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.627777,3.139785,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Keramat Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.734568,3.163956,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jinjang Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.659911,3.209445,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Port Klang Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.409045,3.012033,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.401405,3.034926,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Seri Andalas Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.450028,3.018653,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kota Raja Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.447409,3.042605,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sungai Pinang Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.443346,3.060661,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Shah Alam</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.521092,3.06058,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kota Anggerik Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.545603,3.110132,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>AFRS Fire Station 2</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.712926,2.727607,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sungai Besi Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.7117799,3.06464,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport Fire Rescue Service (AFRS) Fire Station 1</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.710485,2.759148,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>AFRS Fire Station 3</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.691325,2.72435,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Banting Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.505857,2.81455,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Putrajaya Fire and Rescue Station</name>
+        <description>Federal District - federal administrative offices</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.673679,2.932523,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cyberjaya Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.65685,2.912817,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Semenyih Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.858059,2.931994,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bandar Baru Bangi Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.76304,2.936924,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kajang Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.793872,2.989389,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KLIA Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.678572,2.792444,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jalan Penchala Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.640605,3.091308,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sungai Buloh Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.560565,3.20144,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bandar Baru Selayang Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.655865,3.254278,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fire Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.584763,3.073943,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Subang Jaya Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.584834,3.073789,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteer station</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            101.55942,2.660138,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            101.790224,3.086276,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            101.7471933,3.1094194,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            101.629138,3.082216,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            101.590894,3.297485,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            101.249545,3.351529,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            101.103988,3.509812,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            101.663216,3.569935,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            101.643018,3.452351,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            100.980234,3.672196,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            100.938606,3.733907,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            100.844608,3.820363,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sri Hartamas Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.650751,3.162206,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rawang Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.560979,3.307276,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Kudat</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.847572,6.888682,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Kota Marudu</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.769525,6.498752,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Kota Belud</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.428486,6.356167,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ranau Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.66443,5.950599,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tuaran Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.234252,6.178658,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Layangan Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.196626,5.333515,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kuala Penyu Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.584374,5.558701,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tenom Fire And Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.940818,5.121044,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Keningau</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.1535,5.335776,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Papar</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.930367,5.735601,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kota Kinabalu Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.065468,5.960941,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Penampang Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.105737,5.913471,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lintas Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.116273,5.987865,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lahad Datu Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            118.335244,5.029255,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Kinabatangan</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            117.840462,5.579464,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sandakan Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            118.092283,5.864338,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-1739-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            115.427395,4.82114,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            116.427001,5.041031,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            115.727312,5.347493,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            116.628362,5.182709,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            115.95623,5.61462,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            116.115777,5.976474,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            117.914787,4.282457,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>Volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            116.669728,5.937582,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>Volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            118.089294,5.832738,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>Volunteers</description>
+        <styleUrl>#icon-1739-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            109.777724,1.805055,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>Volunteers</description>
+        <styleUrl>#icon-1739-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            110.34422,1.530976,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>Volunteers</description>
+        <styleUrl>#icon-1594-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            110.55954,1.187812,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>Volunteers</description>
+        <styleUrl>#icon-1739-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            111.306326,1.882699,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kota Samarahan Fire and Rescue Station</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.492441,1.459812,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Serian Fire and Rescue Station</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.562956,1.160514,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Batu Lintang Fire and Rescue Station</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.345643,1.534041,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tabuan Jaya Fire and Rescue Station</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.390817,1.532814,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kuching Fire and Rescue Station</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.358434,1.553257,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ibu Pejabat Jabatan Bomba Dan Penyelamat</name>
+        <styleUrl>#icon-1739-3F5BA9-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.39092,1.533639,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Petra Jaya Fire and Rescue Station</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.337585,1.598958,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Sri Aman</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.470889,1.186731,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Betong Fire and Rescue Station</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.53258,1.408505,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description><![CDATA[Volunteers<br><br>https://goo.gl/maps/cvVaZyRi8BQooaVF7 - 2 blds by roadway in 2015 street view - no signs - 1 plain white minivan there - 12/30/2022]]></description>
+        <styleUrl>#icon-1739-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            111.904554,2.837255,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>Volunteers</description>
+        <styleUrl>#icon-1739-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            112.017829,2.084448,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>Volunteers</description>
+        <styleUrl>#icon-1739-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            111.969872,1.782991,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>Volunteers</description>
+        <styleUrl>#icon-1739-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            111.578131,1.374943,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description><![CDATA[Volunteers<br><br>google maps shows this as "permanently closed" - 12/30/2022]]></description>
+        <styleUrl>#icon-1739-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            111.458703,1.243072,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tanjung Manis Airport</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.203257,2.176444,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tanjung Manis Integrated Port Sdn. Bhd.</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.33909,2.157549,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sarikei Fire and Rescue Station</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.52066,2.1202,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba Dan Penyelamat Bintangor</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.638336,2.164921,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kanowit Fire and Rescue Station</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            112.153573,2.102503,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Limbang</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.014818,4.760773,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Sungai Merah</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.847101,2.336833,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Tatau</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            112.855621,2.87896,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Port Klang Free Zone (M)</name>
+        <description><![CDATA[https://goo.gl/maps/82Gyp1VDLeE2 - fire station ?<br><br>http://maritime.bernama.com/news.php?id=617788&lang=en&cat=ex - 2011 article - public safety officers]]></description>
+        <styleUrl>#icon-1594-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            101.294338,2.919871,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bintulu Fire and Rescue Station</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.040649,3.181062,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lopeng Fire and Rescue Station</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.011798,4.379024,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Damansara Utama</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.623075,3.125825,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Petaling Jaya Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.643379,3.097539,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SMK Medamit</name>
+        <description>small community here with school</description>
+        <styleUrl>#icon-1594-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            114.908323,4.490906,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>some complex here</name>
+        <description><![CDATA[https://www.google.com/maps/place/4%C2%B040'02.1%22N+114%C2%B059'04.0%22E/@4.6683463,114.9787447,786m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d4.667262!4d114.984448]]></description>
+        <styleUrl>#icon-1594-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            114.984448,4.667262,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dengkil Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.673464,2.857302,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cawang Bomba, TUDM Jugra</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.453873,2.819832,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Teluk Panglima Garang Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.483306,2.892049,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pulau Indah Fire and Rescue Post</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.353193,2.938526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>North Port Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.359286,3.02963,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>South Point Fire Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.395506,2.99518,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Putra Heights Fire Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.57011,2.987612,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kelab sukan dan kebajikan bomba kapar</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.411529,3.135537,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saujana Utama Volunteer Fire Brigade</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.47809,3.206472,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bandar Tasik Puteri Volunteer Fire Brigade</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.478168,3.286515,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bestari Jaya Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.40303,3.378617,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Batu Arang Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.47308,3.318276,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bagan Sungai Yu Volunteer Fire Brigade</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.244426,3.356291,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasir Penambang Volunteer Fire Brigade</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.251995,3.351883,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kuala Selangor Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            101.254296,3.326843,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Desa Petaling Volunteer Fire Brigade</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.7029497,3.0887811,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pudu Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.7134058,3.133937,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cheras Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.7442284,3.0900046,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PASUKAN BOMBA SUKARELA SALAK SOUTH KUALA LUMPUR DAN SELANGOR</name>
+        <styleUrl>#icon-962-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.6966469,3.0812056,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sri Petaling Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.6816387,3.0712293,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fire and Rescue Department of Malaysia Headquarters, Federal Territory of Kuala Lumpur</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.7012922,3.1360559,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jalan Tun Razak Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.7174101,3.1635315,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Menjalara Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.6327331,3.1949279,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sentul Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.691544,3.1701323,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sentul Volunteer Fire Brigade</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.6919195,3.1697557,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Titiwangsa Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.6990735,3.165986,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Negeri Sembilan</name>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Telok Kemang</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.857914,2.451228,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sepang Fire and Rescue Station</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.75044,2.688429,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Seremban 2 Fire and Rescue Station</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.918634,2.686581,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Seremban Fire and Rescue Station</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.951164,2.714624,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kuala Pilah Fire and Rescue Station</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.247407,2.745954,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Seremban, Negeri Sembilan</name>
+        <description>Malaysia</description>
+        <styleUrl>#icon-959-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            101.948988,2.718592,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fire Station</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.918583,2.686984,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-960-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.770496,2.7632,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jelebu Fire Station</name>
+        <description>Negeri Sembilan, Malaysia - approx location</description>
+        <styleUrl>#icon-959-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.11754,3.068039,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jelebu Fire and Rescue Station</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.069483,2.939942,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Seremban, Negeri Sembilan</name>
+        <description><![CDATA[SEREMBAN FIRE & RESCUE DISTRICT STATION<br>Jalan Za'aba, 70100 Seremban, Negeri Sembilan Za'aba Road, 70100 Seremban, Negeri Sembilan<br>Tel : 06 - 762 4444 Tel: 06-762 4444<br>Fax : 06 - 767 7267 Fax: 06-767 7267]]></description>
+        <styleUrl>#icon-959-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            101.948988,2.718592,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nilai Fire and Rescue Station</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.78949,2.828405,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteer station</description>
+        <styleUrl>#icon-959-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.507622,2.483505,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Port Dickson</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.794984,2.523749,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mantin Fire and Rescue Station</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.882591,2.8276,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Simpang Pertang Fire and Rescue Station</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.25902,2.94435,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Seri Jempol Fire and Rescue Station</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.406034,2.899181,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bahau Fire and Rescue Station</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.403412,2.810551,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteer station</description>
+        <styleUrl>#icon-959-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.420864,2.903101,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Rembau</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.069292,2.603866,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tampin Fire and Rescue Station</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.235292,2.48469,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gemas Fire and Rescue Station</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.60044,2.578967,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description><![CDATA[translation is "volunteer fire force"]]></description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.078898,3.018679,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>Volunteer station</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.318901,2.643477,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteer station</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.084789,2.947498,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteer station</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            101.906043,2.65416,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteer station</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            101.963425,2.588974,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tapak BBP Linggi</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.009948,2.486559,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Senawang Fire and Rescue Station</name>
+        <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.989541,2.703295,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Engineering Workshop, Fire and Rescue Department of Malaysia, Negeri Sembilan State</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.989753,2.702457,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.573062,2.667298,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela Titi, Jelebu</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.06896,2.998117,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gemencheh Fire and Rescue Station</name>
+        <description>added 12/30/2022</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.402766,2.534221,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kota Fire and Rescue Station</name>
+        <description>added 12/30/2022</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.167643,2.509623,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela Pertang</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.219484,2.960566,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Petaling Volunteer Fire Brigade</name>
+        <description>add 2/2/2024</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.053915,2.95005,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Seri Menanti Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.160839,2.701919,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Brunei</name>
+      <Placemark>
+        <name><![CDATA[Bandar Seri Begawan Fire & Rescue Station]]></name>
+        <description><![CDATA[http://fire-rescue.gov.bn/SitePages/Cawangan%20Operasi%20'A'.aspx]]></description>
+        <styleUrl>#icon-1571-000000</styleUrl>
+        <Point>
+          <coordinates>
+            114.937133,4.893723,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Berakas Fire & Rescue Station]]></name>
+        <description><![CDATA[http://fire-rescue.gov.bn/SitePages/Cawangan%20Operasi%20'C'.aspx]]></description>
+        <styleUrl>#icon-1571-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            114.93242,4.925106,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Beribi Fire & Rescue Station]]></name>
+        <description><![CDATA[http://fire-rescue.gov.bn/SitePages/Cawangan%20Operasi%20'A'.aspx]]></description>
+        <styleUrl>#icon-1571-000000</styleUrl>
+        <Point>
+          <coordinates>
+            114.905255,4.892449,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bukit Beruang Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.607113,4.732324,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fire and Rescue Department</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.656125,4.803309,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jerudong Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.838524,4.926487,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Labi Fire & Rescue Station]]></name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.463648,4.383222,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Lambak Kanan Fire & Rescue Station]]></name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.964665,4.971948,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Lamunin Fire & Rescue Station]]></name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.711868,4.677685,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Muara Fire & Rescue Station]]></name>
+        <description><![CDATA[http://fire-rescue.gov.bn/SitePages/Cawangan%20Operasi%20'A'.aspx - rigs in this area and to SW]]></description>
+        <styleUrl>#icon-1571-000000</styleUrl>
+        <Point>
+          <coordinates>
+            115.065643,5.02794,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Seria's Fire Brigade]]></name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.337581,4.614598,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sungai Kebun Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.943584,4.880001,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sungai Lampai Fire & Rescue Station]]></name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.950842,4.87487,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Tumasek Fire & Rescue Station]]></name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.924405,4.876187,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RBN Fire Station Muara Camp</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.085446,5.035276,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fire Station</name>
+        <description><![CDATA[Jalan Tengah<br><br>has Shell Oil air crash truck ? - http://jenterabomba995.blogspot.com/search/label/Brunei%20Shell%20Petroleum%20Fire%20and%20ER%20Fire%20Appliances]]></description>
+        <styleUrl>#icon-1571-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            114.203291,4.576938,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mentiri Fire Department</name>
+        <description><![CDATA[http://fire-rescue.gov.bn/SitePages/Cawangan%20Operasi%20'A'.aspx]]></description>
+        <styleUrl>#icon-1571-000000</styleUrl>
+        <Point>
+          <coordinates>
+            115.033317,4.972608,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brunei International Airport</name>
+        <description>http://jenterabomba995.blogspot.com/search/label/Brunei%20DCA%20AFS%20fire%20appliances</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            114.928333,4.944167,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Anduki Airfield</name>
+        <description>has Shell Oil airport crash truck per BSP Anduki Airfield</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            114.376401,4.633551,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brunei LNG</name>
+        <styleUrl>#icon-1594-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.463376,4.668198,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bangar fire station</name>
+        <description>here per Google Maps</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            115.072119,4.709897,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rataie fire station</name>
+        <description><![CDATA[https://plus.google.com/photos/photo/101340993450318879883/6319651498371417458<br><br>https://www.google.com/maps/place/4%C2%B039'27.1%22N+115%C2%B003'47.4%22E/@4.6575284,115.0625857,204m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d4.657527!4d115.063155<br><br>yup - sat view matches station photo]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            115.063201,4.655556,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pengkalan Batu Fire Station</name>
+        <description>added to this zerg90 map 12/30/2022</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            114.824946,4.789403,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Main Station Hengyi Fire Departmemt</name>
+        <description>this map marker added to this zerg90 map 12/30/2022</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            115.109007,5.004125,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba Sungai Liang</name>
+        <description>this map marker added to this zerg90 map 12/30/2022</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            114.525024,4.70402,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jerudong Fire Station (IZZAH)</name>
+        <description>this map marker added to this zerg90 map 12/30/2022</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            114.830679,4.930972,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BSP Fire Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            114.30155,4.605613,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SPARK Fire Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            114.481366,4.670816,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Kelantan</name>
+      <Placemark>
+        <name>Bachok Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.391568,6.054939,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pengkalan Chepa Station - Balai Bomba Dan Penyelamat</name>
+        <description><![CDATA[Ketua Balai<br> Balai Bomba dan Penyelamat Pengkalan Chepa,<br> Jalan Padang Tembak,<br> 16100 Kota Bharu, Kelantan]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            102.302672,6.137824,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Pengkalan Kubor</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.099953,6.224366,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gua Musang Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.963055,4.86258,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kota Darulnaim Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.238832,6.109416,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasir Mas Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.142082,6.037521,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasir Tumboh Fire and Rescue Station</name>
+        <description>2015 street view - 1 engine and 1 cargo truck and 1 SUV - must be new since 2014</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            102.281355,6.047297,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>Volunteers</description>
+        <styleUrl>#icon-962-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.236083,6.132574,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tumpat Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.173888,6.180419,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kota Bharu Fire and Rescue Station</name>
+        <description>apparently this is a list of all fire stations in the State of Kelatan - http://www.bomba.gov.my/english.php/pages/view/788 - 8/15/2017</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            102.25688,6.12659,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rantau Panjang Station</name>
+        <description><![CDATA[unknown exact location - google maps does not really know this street address<br><br>Ketua Balai<br> Balai Bomba dan Penyelamat Rantau Panjang,<br> Lebuh Raya Rantau Panjang,<br> 17200 Rantau Panjang, Kelantan]]></description>
+        <styleUrl>#icon-1594-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            101.972356,6.023719,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Perniagaan Hj Mustafa & Anak-Anak]]></name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.842704,5.695932,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ketereh Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.250124,5.966146,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tunjung Fire and Rescue Station</name>
+        <description>https://goo.gl/maps/2vKZToz7J8J2 - 2014 street view shows 2 pumpers - 2015 street view shows 1 pumper and 1 cargo truck - at some federal office bld - maybe is new since 2014</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            102.232433,6.072064,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasir Puteh Fire and Rescue Station</name>
+        <description><![CDATA[Ketua Balai<br> Balai Bomba dan Penyelamat Pasir Puteh,<br> Jalan Kota Bahru-Pasir Puteh,<br> 16800 Pasir Puteh, Kelantan<br><br>probably is Jalan (street) Kota Bahru at Pasir Puteh<br><br>No. Tel : 09 - 786 7444<br> No. Faks : 09 - 786 5044]]></description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            102.394553,5.834946,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tanah Merah Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.148403,5.812931,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kuala Krai Fire and Rescue Station</name>
+        <description>Balai Bomba dan Penyelamat Kula Krai</description>
+        <styleUrl>#icon-22</styleUrl>
+        <Point>
+          <coordinates>
+            102.200532,5.530003,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Machang Fire and Rescue Station</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.214648,5.761815,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ACSK Bukit Bunga Volunteer Fire Brigade</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.892788,5.790127,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.368608,6.010825,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tok Bali Marine Volunteer Fire Brigade (PBS Marin)</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.474039,5.89762,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dabong Fire and Rescue Station</name>
+        <description>added to this zerg90 map 2/2/2024</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.00934,5.36731,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sungai Durian Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.200698,5.563186,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kemahang Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            101.995198,5.808662,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasir Puteh Volunteer Fire Brigade</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.402296,5.841134,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tok Bali Fire and Rescue Station</name>
+        <description>added 2//2/2024</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.483902,5.887309,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wakaf Bharu Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            102.183655,6.12337,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Johor</name>
+      <Placemark>
+        <name>Johor Jaya Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.795229,1.531299,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jabatan Bomba Dan Penyelamat Negeri Johor</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.759246,1.522663,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Iskandar Puteri</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.62065,1.452473,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pekan Nenas Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.514146,1.506811,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>https://maps.app.goo.gl/xmt4r6BtSobTAYGn8 - 1 pumper and 1 minivan in 2025 photo here at google maps - 2 bay station - 1 tall door for pumper and 1 low door for minivan - multi photos - 2/18/2025</description>
+        <styleUrl>#icon-1571-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            103.814545,1.600574,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Skudai</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.626479,1.537846,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kulai Fire and Rescue Station</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.605832,1.658408,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Kulaijaya</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.626629,1.657752,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-962-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.531208,1.667455,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kota Tinggi Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.898987,1.73971,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasir Gudang Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.895984,1.464095,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Muar Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.572383,2.053158,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tangkak Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.543747,2.270506,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yong Peng Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.063326,2.012212,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kluang Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.319598,2.033943,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Penggaram</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.940887,1.858647,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Batu Pahat Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.929947,1.849949,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Rengit,</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.158386,1.679857,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[CEFS PIC (Central Emergency & Fire Services Pengerang Integrated Complex)]]></name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            104.135256,1.370891,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bomba Sukarela Felda Tunggal</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            104.176041,1.477071,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Bandar Penawar</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            104.22852,1.557983,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mersing Fire and Rescue Station</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.839323,2.428037,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Renggam</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.39997,1.883578,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Ayer Hitam</name>
+        <styleUrl>#icon-1594-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.165827,1.904297,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.825602,2.343681,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jementah Volunteer Fire Brigade</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.686332,2.439958,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.052991,2.471222,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.039742,2.23485,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.1986,2.19292,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela Kampung Bekok</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.132524,2.297501,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela Kangkar Pulai</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.594897,1.557021,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.462629,1.33918,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.396454,1.550943,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.284022,1.64109,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela Benut</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.258615,1.64126,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.310768,1.828364,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sri Gading Volunteer Fire Brigade</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.030025,1.855188,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.767346,1.90182,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.784653,1.886218,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bandar Baru Segamat Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.870413,2.498439,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Labis Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.018043,2.379941,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Segamat Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.813821,2.509515,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pagoh Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.739445,2.136813,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FIRE POST PARIT SULONG</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.869288,1.973206,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bukit Gambir Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.660126,2.216695,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Larkin Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.750852,1.48521,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bombasukarela Felda Ulu Tebrau</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.755475,1.630141,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>K.R.T. Sungai Rengit Volunteer Fire Brigade 泗湾志愿消防队</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            104.223694,1.352771,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela - ? old ?</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.901573,1.732835,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Endau Fire and Rescue Station</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.622431,2.65091,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1739-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.625961,2.652609,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mersing Volunteer Fire Brigade</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.83664,2.424216,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1594-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.667191,2.308658,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kahang Volunteer Fire Brigade</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.543424,2.214408,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bandar Tenggara Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-1571-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            103.614252,1.850944,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport Fire Rescue Service (AFRS), Senai Airport</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-1504-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            103.672461,1.641529,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Senai Volunteer Fire Brigade</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-1571-000000</styleUrl>
+        <Point>
+          <coordinates>
+            103.644608,1.599376,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Taman Mount Austin Volunteer Fire Brigade</name>
+        <description>added to this zerg90 map 2/2/2024</description>
+        <styleUrl>#icon-1571-000000</styleUrl>
+        <Point>
+          <coordinates>
+            103.769831,1.547874,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kulai Besar Volunteer Fire Brigade</name>
+        <description>added to this zerg90 map 2/2/2024</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            103.619871,1.644288,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parit Raja Volunteer Fire Brigade</name>
+        <description>added to this zerg90 map 2/2/2024</description>
+        <styleUrl>#icon-1571-000000</styleUrl>
+        <Point>
+          <coordinates>
+            103.119115,1.835365,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba Dan Penyelamat Sukarela CRSM Ayer Hitam</name>
+        <description>added to this zerg90 map 2/2/2024</description>
+        <styleUrl>#icon-1571-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            103.18098,1.915793,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Persatuan Bomba Sukarela Seri Gading</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            103.029547,1.862135,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Emergency Respons Team ERT</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            103.878665,1.458756,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tanjung Langsat Fire Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-1571-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            103.999298,1.460634,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kempas Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-1571-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            103.732961,1.526875,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pontian Baru Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            103.404136,1.484772,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pontian Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            103.387025,1.491959,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela Chaan</name>
+        <description><![CDATA[little bit old fire station - multi phone numbers on the old fire dept sign -  - small town - maybe 5,000 people - mostly houses and stores - maybe open sewers<br><br>https://maps.app.goo.gl/6F1uSMNtxN7c928AA - nearby fire hydrant]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            103.041639,2.247881,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Sarawak - fire</name>
+      <Placemark>
+        <name>Petra Jaya Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.337585,1.598958,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Engineering Workshop, Fire and Rescue Department of Malaysia, Sarawak State</name>
+        <styleUrl>#icon-1739-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.323556,1.591064,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Padungan Fire and Rescue Station</name>
+        <description><![CDATA[Kuching Fire and Rescue Station per older map marker 12/30/2022<br><br>35 photos - 3 bays - 4 stories - attached apt bld of 4 floors - city has some 30 or 40 story highrises - Scania always in the rear (2014 to 2019) - 12/30/2022]]></description>
+        <styleUrl>#icon-1571-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            110.358831,1.553073,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Batu Lintang Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.3457,1.534124,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fire and Rescue Department of Malaysia Headquarters, Sarawak State</name>
+        <description><![CDATA[Ibu Pejabat Jabatan Bomba Dan Penyelamat - from older map marker - 12/30/2022<br><br>11 photos here at google maps - fire service display - 4 story admin hq - 12/30/2022]]></description>
+        <styleUrl>#icon-1899-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            110.39092,1.533639,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Balai Bomba & Penyelamat Batu Kawa]]></name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.30169,1.497621,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport Fire Rescue Service (AFRS), Kuching Airport</name>
+        <styleUrl>#icon-959-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.351063,1.489569,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Asajaya Fire and Rescue Station</name>
+        <description><![CDATA[opening Jan 2023 maybe - 12/30/2022<br><br>2021 photos of 9 FFs and 25 FFs - also 1 engine in photo - 12/30/2022<br><br>2019 photos of new fire station shell<br><br>seems there is a nearby police station]]></description>
+        <styleUrl>#icon-1594-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            110.611026,1.543316,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Siburan Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.409808,1.33294,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lundu Fire and Rescue Station</name>
+        <description><![CDATA[Balai Bomba dan Penyelamat Lundu - from older map marker<br><br>6 photos at google maps - 5 story in rear of 2 story fire station - maybe 1 regular engine and 1 light engine - 12/30/2022]]></description>
+        <styleUrl>#icon-1571-000000</styleUrl>
+        <Point>
+          <coordinates>
+            109.853093,1.684236,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bau Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.133487,1.405092,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Serian Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.562877,1.160436,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Simunjan Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.751434,1.393804,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>Volunteers</description>
+        <styleUrl>#icon-959-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            110.985321,1.314388,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Betong Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.53258,1.408505,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-959-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            111.578131,1.374943,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pejabat Zon 3 Balai Bomba dan Penyelamat Sri Aman</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.46552,1.233958,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saratok Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.352796,1.770379,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-959-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            111.969872,1.782991,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sarikei Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.520892,2.119863,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bintangor Fire and Rescue Station</name>
+        <description>NEW FIRE STATION READY TO BE COMPLETED at bintagor per feb 2021 pocket guide - 12/30/2022</description>
+        <styleUrl>#icon-959-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            111.638462,2.165095,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sungai Merah Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.847101,2.336833,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sibu Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.829313,2.289649,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Airport Fire & Rescue Service Station]]></name>
+        <styleUrl>#icon-503-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.830535,2.287284,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sibujaya Fire and Rescue Station</name>
+        <description><![CDATA[NEW FIRE STATION READY TO BE COMPLETED per feb 2021 pocket guide - 12/30/2022<br><br>2018 street view - under construction<br><br>2022 photos at google maps - completed - engine with children - snake rescued - etc - 12/30/2022]]></description>
+        <styleUrl>#icon-1571-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            111.972008,2.24144,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport Fire and Rescue Service of Sibu</name>
+        <styleUrl>#icon-959-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.984542,2.259204,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Selangau Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            112.32954,2.530112,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tatau Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            112.861388,2.906774,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport Fire Rescue Service (AFRS), Bintulu Airport</name>
+        <styleUrl>#icon-959-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.02376,3.120366,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bintulu Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.040894,3.181291,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CEFS BINTULU MAIN FIRE STATION</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.079866,3.28004,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kidurong Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.098314,3.26854,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SATELLITE STATION ABF</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.071512,3.270897,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bintulu Port Fire Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.071307,3.26846,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Samalaju Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.326054,3.532691,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Batu Niah Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.753597,3.802986,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lutong Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.991657,4.517937,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Miri Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.991871,4.392831,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lopeng Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.011798,4.379024,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport Fire Rescue Service (AFRS), Miri Airport</name>
+        <styleUrl>#icon-1504-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.989963,4.323404,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Marudi Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.321499,4.18477,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport Fire Rescue Service (AFRS), Marudi Airport</name>
+        <styleUrl>#icon-959-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.326646,4.179217,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport Fire Rescue Service (AFRS), Limbang Airport</name>
+        <styleUrl>#icon-959-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.007007,4.808198,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Limbang Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.014818,4.760773,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-959-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            115.427395,4.82114,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lawas Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.405718,4.851089,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport Fire Rescue Service (AFRS), Mulu Airport</name>
+        <styleUrl>#icon-959-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.81023,4.048599,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Song Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            112.54506,2.007108,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kapit Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            112.926712,2.009868,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kanowit Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            112.153573,2.102503,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-959-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            112.017829,2.084448,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Daro Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.424883,2.515518,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mukah Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            112.077848,2.90478,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-959-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            111.306326,1.882699,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tanjung Manis Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.33059,2.134617,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Forest fire betong</name>
+        <styleUrl>#icon-960-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.628257,1.283924,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sabal Agroforestry Centre</name>
+        <styleUrl>#icon-960-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.909874,1.069265,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kampung Jawa Fire and Rescue Station</name>
+        <styleUrl>#icon-959-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.249423,5.286676,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tabuan Jaya Fire and Rescue Station</name>
+        <description><![CDATA[2 bay fire station just south of HQ - no traffic lights on highway - can cross the highway thru the median - 12/30/2022<br><br>no photos here at google maps - 12/30/2022]]></description>
+        <styleUrl>#icon-1571-000000</styleUrl>
+        <Point>
+          <coordinates>
+            110.390817,1.532814,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Headquaters Sarawak Brigade General Operation Force</name>
+        <styleUrl>#icon-1739-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.296626,1.525365,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Batu Kawah Administrative Complex</name>
+        <styleUrl>#icon-1739-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.30381,1.519752,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <description>volunteers</description>
+        <styleUrl>#icon-959-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            109.777724,1.805055,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Perkampungan Bomba Jalan Matang Baru</name>
+        <description>added to this zerg90 map 12/30/2022</description>
+        <styleUrl>#icon-959-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            110.307396,1.57375,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kota Samarahan Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.492441,1.459812,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sri Aman Fire and Rescue Station</name>
+        <styleUrl>#icon-959-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            111.470889,1.186731,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Petronas LNG Gate</name>
+        <styleUrl>#icon-960-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.063888,3.269019,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PST Petronas Shell Terminal</name>
+        <styleUrl>#icon-962-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.07901,3.258862,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Serba Dinamik Bintulu Integrated Energy Hub</name>
+        <styleUrl>#icon-960-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.095568,3.278787,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sarawak Methanol Project</name>
+        <styleUrl>#icon-960-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.11083,3.305059,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Similajau National Park</name>
+        <styleUrl>#icon-960-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.156394,3.348289,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sime darby Plantation Rajawali Divisian Office</name>
+        <styleUrl>#icon-960-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.411346,3.379564,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sime Darby Plantation - Rajawali Regional Office</name>
+        <styleUrl>#icon-960-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            113.41318,3.375699,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Police Marin</name>
+        <styleUrl>#icon-960-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.398808,1.568024,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bintawa Kuching South Police Station</name>
+        <styleUrl>#icon-960-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            110.386477,1.566655,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sarawak Forestry</name>
+        <description>https://sarawakforestry.com/hotlines/ - 4 hotline numbers - If you encounter or suspect any illegal activities e.g. hunting, capturing, killing, trading, keeping as pets, importing or exporting of protected wildlife, or any activity that violates the Ordinances, please contact our hotlines: - 12/30/2022</description>
+        <styleUrl>#icon-960-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            110.391777,1.563805,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Julau District Office - future fire station</name>
+        <description>new Category D fire station will be built in Julau - 12/30/2022</description>
+        <styleUrl>#icon-959-FFEA00</styleUrl>
+        <Point>
+          <coordinates>
+            111.903389,2.056781,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lubok Antu - future fire station</name>
+        <description>new Category D fire station will be built in Lubok Antu - 12/30/2022</description>
+        <styleUrl>#icon-959-FFEA00</styleUrl>
+        <Point>
+          <coordinates>
+            111.853596,1.043355,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dalat - future fire station</name>
+        <description><![CDATA[new Category D fire station will be built in Dalat - 12/30/2022<br><br>dalat has a hospital per google map search]]></description>
+        <styleUrl>#icon-959-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            111.93886,2.738395,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sg. Asap Township - future fire sta</name>
+        <description>new Category D fire station will be built in Sg Asap - 12/30/2022</description>
+        <styleUrl>#icon-959-FFEA00</styleUrl>
+        <Point>
+          <coordinates>
+            113.916977,3.046479,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Batu Kawa - future fire sta</name>
+        <description>new Category D fire station will be built in Batu Kawa  - 12/30/2022 - maybe near here</description>
+        <styleUrl>#icon-959-FFEA00</styleUrl>
+        <Point>
+          <coordinates>
+            110.327158,1.514256,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Polis Asajaya</name>
+        <description><![CDATA[no street view of police station and no photos - 12/30/2022<br><br>approx 6 blds in small compound per sat view - 12/30/2022]]></description>
+        <styleUrl>#icon-1739-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            110.612324,1.544042,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Belaga</name>
+        <description><![CDATA[NEW FIRE STATION READY TO BE COMPLETED - per feb 2021 pocket guide<br><br>======================<br><br>https://goo.gl/maps/RBE2oz9bcXE8Es8r9 - 360 view by river<br><br>seems to be at least 1 4 story bld in the town - clinic is large and red in sat view - 12/30/2022]]></description>
+        <styleUrl>#icon-1594-000000</styleUrl>
+        <Point>
+          <coordinates>
+            113.782221,2.705004,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sungai plan</name>
+        <description>NEW FIRE STATION READY TO BE COMPLETED - per feb 2021 pocket guide - not sure if actually in this area - 12/30/2022</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            113.042106,3.171426,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ibu Pejabat Polis Daerah Belaga</name>
+        <description>no photos and no street view - 12/30/2022</description>
+        <styleUrl>#icon-1739-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            113.781541,2.704748,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PBS KABIMA</name>
+        <description><![CDATA[this came up in a search for 'fire station'  12/30/2022]]></description>
+        <styleUrl>#icon-1594-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            114.8321,4.731634,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jabatan Kebajikan Masyarakat Bahagian Kuching</name>
+        <description><![CDATA[maybe vols here<br><br>Pasukan Bomba Sukarela - per older google map marker that was  here - 12/30/2022]]></description>
+        <styleUrl>#icon-1594-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            110.344212,1.531024,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SSGP Bintulu Operation Centre</name>
+        <description>gas company</description>
+        <styleUrl>#icon-1739-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            113.26654,3.358873,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Long Lama Volunteer Fire Brigade</name>
+        <description>added to this zerg90 map 2/2/2024</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            114.403572,3.762641,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Pahang</name>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela Tembangau</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.5351,3.112234,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport Fire Rescue Service (AFRS), Kuantan Airport</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.211673,3.769476,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela Gambang</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.098981,3.705956,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Peramu Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.385377,3.543857,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Taman Tas Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.235366,3.782967,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Engineering Workshop Balai Bomba Indera Mahkota</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.286732,3.82128,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kuantan Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.321076,3.812264,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fire and Rescue Department of Malaysia Headquarters, Pahang State</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.30252,3.832653,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gebeng Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.356424,3.948992,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kuantan Port Fire and Rescue Station (Private)</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.421553,3.96799,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PETRONAS Emergency Response Center (ERC) Gebeng</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.37509,3.991991,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kuala Rompin Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.488582,2.797246,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            104.16391,2.812376,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.274231,3.421704,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Persatuan Pasukan Bomba Sukarela Sri Jaya 斯里再也自愿消防委员会</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.872663,3.672093,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bomba Sukarela Damak</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.214981,3.949617,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.8957,3.908468,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.868408,3.811168,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.937332,3.814584,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.386173,3.619202,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kuala Lipis Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.046494,4.178795,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sungai Koyan Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.798315,4.231418,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jerantut Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.361969,3.939988,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Raub Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.846928,3.807043,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ringlet Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.398559,4.416076,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bomba Dan Penyelamat Sukarela Tringkap C. Highlands</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.428027,4.515236,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Genting Highlands Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.791632,3.421795,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Karak Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.032237,3.415886,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pondok Bomba Sukarela Janda Baik</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.863591,3.320973,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Telemong Volunteer Fire Brigade</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.087859,3.293183,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Manchis Volunteer Fire Brigade</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.163804,3.200747,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Perting Volunteer Fire Brigade</name>
+        <description>12/30/2022 - per facebook - approx 20 men - 1 engine + 1 minivan + 1 car</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            101.905955,3.521779,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bentong Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            101.912777,3.521226,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Temerloh Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.418301,3.450738,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bukit Angin Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.419811,3.437611,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mentakab Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.354698,3.480611,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Triang Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.415582,3.247104,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Maran Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.78022,3.584375,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jengka Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.546304,3.764613,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Muadzam Shah Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            103.093381,3.049982,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba Sukarela Kemayan</name>
+        <description>added 12/29/2022</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            102.368758,3.133241,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nenasi Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            103.438033,3.147776,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cawang Bomba SLTT, TUDM Bukit Ibam</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            102.979107,3.195189,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chini Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            103.115405,3.364673,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kuala Tahan Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            102.3984,4.356428,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kampung Raja Volunteer Fire Brigade</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            101.40774,4.567301,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cameron Highlands Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            101.389161,4.492529,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kuala Krau Fire and Rescue Station</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            102.385286,3.733823,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Sabah</name>
+      <Placemark>
+        <name>Kunak Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            118.246075,4.685759,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kota Kinabatangan Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            117.840462,5.579464,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport Fire Rescue Service (AFRS), Sandakan Airport</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            118.058613,5.898924,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sandakan Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            118.092283,5.864338,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Beluran Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            117.55998,5.89485,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport Fire Rescue Service (AFRS), Kudat Airport</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.837237,6.922942,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kudat Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.847548,6.888575,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba Sukarela Kg. Air Kudat</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.845758,6.882609,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kota Marudu Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.76952,6.498757,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kundasang Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.576096,5.982643,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Dan Penyelamat Sukarelawan Pinawantai</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.739852,6.743826,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Atas Air Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            118.609055,4.484567,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Semporna Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            118.605673,4.475434,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Bomba dan Penyelamat Semporna (sementara)</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            118.614874,4.47639,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TEAM VOLUNTEER FIRE Felda Sahabat</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            118.911964,5.058586,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lahad Datu Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            118.335053,5.029144,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>airport fire rescue station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            118.121391,4.316288,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tawau Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            117.883421,4.248112,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sipitang Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.550354,5.07165,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tenom Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.941094,5.121125,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Beaufort Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.747333,5.34347,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.727312,5.347493,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kuala Penyu Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.584614,5.558775,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kimanis Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.889892,5.601762,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SOGT Fire and Rescue Services</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.892246,5.640465,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sook Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.30698,5.145647,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Keningau Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.153512,5.335768,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tambunan Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.367742,5.670709,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Papar Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.930365,5.735548,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lok Kawi Camp Army Fire Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.051349,5.853554,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Penampang Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.105813,5.913489,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport Fire Rescue Service (AFRS), Kota Kinabalu International Airport</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.054579,5.938615,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kota Kinabalu Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.065496,5.960849,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lintas Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.116273,5.987865,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>K9 Unit, Fire and Rescue Department of Malaysia Sabah State</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.234554,6.177901,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kota Belud Fire and Rescue Station (Temporary)</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.416395,6.35488,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.427001,5.041031,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pos 1 pemadam</name>
+        <styleUrl>#icon-1899-FF5252-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            117.640905,4.141623,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ranau Fire and Rescue Station</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.664428,5.950493,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela Kg Libang</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            116.669728,5.937582,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balai Pasukan Bomba Sukarela Zon Silam Lahad Datu Sabah</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            118.176725,4.939742,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            117.914836,4.282532,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela Mansud</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.485364,5.484047,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela Berangkok</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            115.49694,5.462197,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>balai mini bomba sukarela kg libang</name>
+        <description>added 2/2/2024</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            116.693902,5.956182,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Malacca</name>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.130971,2.289729,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasukan Bomba Sukarela</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.256173,2.205626,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Masjid Tanah Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.112814,2.34361,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tangga Batu Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.167085,2.256202,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jalan Kubu Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.244987,2.198927,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jasin Bestari Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.41515,2.298443,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jasin Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.42947,2.308093,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bomba Sukarela Machap Baru</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.331563,2.382832,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Airport Fire Rescue Service (AFRS), Melaka Airport</name>
+        <styleUrl>#icon-1504-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.253553,2.262925,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ayer Keroh Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.28675,2.268033,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bukit Katil Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.304368,2.240721,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alor Gajah Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.204606,2.37076,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fire and Rescue Department, Alor Gajah District</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.20863,2.383287,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Merlimau Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.426803,2.146083,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Padang Temu Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.291031,2.183675,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cheng Fire and Rescue Station</name>
+        <styleUrl>#icon-1571-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.215797,2.27291,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Machap Baru Volunteer Fire Brigade</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            102.331563,2.382832,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

@@ -105,8 +105,8 @@ function App() {
                 <Flame className="w-5 h-5 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-white">FireGuard</h1>
-                <p className="text-xs text-gray-400">Smoke & Fire Detection System</p>
+                <h1 className="text-xl font-bold text-white">Smoke and Fire</h1>
+                <p className="text-xs text-gray-400">Detection System</p>
               </div>
               <div className="flex items-center gap-2 ml-6">
                 <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>

@@ -41,20 +41,22 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin, error, isLoading }) => {
 
   return (
     <div className="min-h-screen bg-gray-900 flex items-center justify-center px-4">
-      <div className="max-w-md w-full space-y-8">
+      <div className="max-w-md w-full space-y-6">
         {/* Header */}
-        <div className="text-center">
-          <div className="flex items-center justify-center gap-3 mb-6">
+        <div className="text-center pt-4">
+          <div className="flex items-center justify-center gap-3 mb-4">
             <div className="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center">
               <Flame className="w-7 h-7 text-white" />
             </div>
             <div className="text-left">
-              <h1 className="text-2xl font-bold text-white">FireGuard</h1>
+              <h1 className="text-2xl font-bold text-white">Smoke and Fire
+
+              </h1>
               <p className="text-sm text-gray-400">Detection System</p>
             </div>
           </div>
           <h2 className="text-3xl font-bold text-white mb-2">Welcome Back</h2>
-          <p className="text-gray-400">Sign in to access the fire detection system</p>
+          <p className="text-gray-400">Sign in to access the Smoke and Fire detection system</p>
         </div>
 
         {/* Login Form */}
@@ -146,27 +148,36 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin, error, isLoading }) => {
 
           {/* Demo Credentials */}
           <div className="mt-6 pt-6 border-t border-gray-700">
-            <div className="bg-blue-900/30 border border-blue-700/50 rounded-lg p-4">
+            <button
+              type="button"
+              onClick={() => {
+                setEmail('admin@safds.com');
+                setPassword('admin123');
+                setValidationErrors({});
+              }}
+              className="w-full bg-blue-900/30 border border-blue-700/50 rounded-lg p-4 hover:bg-blue-900/50 transition-colors cursor-pointer text-left"
+              disabled={isLoading}
+            >
               <h4 className="text-blue-300 font-medium mb-2 flex items-center gap-2">
-                <Shield className="w-4 h-4" />
-                Demo Credentials
-              </h4>
+                 <Shield className="w-4 h-4" />
+                 Demo Credentials (Click to fill)
+               </h4>
               <div className="space-y-1 text-sm">
                 <p className="text-gray-300">
-                  <span className="text-gray-400">Email:</span> admin@fireguard.com
+                  <span className="text-gray-400">Email:</span> admin@safds.com
                 </p>
                 <p className="text-gray-300">
                   <span className="text-gray-400">Password:</span> admin123
                 </p>
               </div>
-            </div>
+            </button>
           </div>
         </div>
 
         {/* Footer */}
         <div className="text-center">
           <p className="text-gray-500 text-sm">
-            © 2025 FireGuard Detection System. All rights reserved.
+            © 2025 Smoke and Fire Detection System. All rights reserved.
           </p>
         </div>
       </div>
